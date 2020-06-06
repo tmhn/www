@@ -5,7 +5,7 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
+    title: `Tom Hanson`,
     description: `Gatsby starter styled with Tailwind`,
     author: `@taylorbryant`,
   },
@@ -19,7 +19,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
+        theme_color: fullConfig.theme.colors.paper,
         display: `minimal-ui`,
         icon: `src/images/tailwind-icon.png`,
       },
@@ -34,6 +34,12 @@ module.exports = {
             ? [require(`cssnano`)]
             : []),
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     `gatsby-plugin-offline`,

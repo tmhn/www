@@ -2,41 +2,47 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import Section from "../components/section";
+
+// import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import th from "../images/th.jpg";
 
 function IndexPage() {
   return (
+    <div className="bg-paper">
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
+      <section className="">
+        <div className="flex flex-row">
+          <div className="justify-between">
+            <h2 className="inline-block py-3 mb-10 text-4xl font-bold bg-yellow-400 font-display">
+              Tom Hanson
+            </h2>
 
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
+            <p className="w-5/6 text-sm leading-loose text-copy">
+              I’m a Software Engineer, currently at <a className="text-red" href="http://and.digital">AND Digital</a> in Leeds, building cool stuff with React, Node & AWS. Powered by flat whites & cookies.
+            </p>
+          </div>
+          <img
+            alt="Cat and human sitting on a couch"
+            className="w-1/3 rounded"
+            src={th}
+          />
+        </div>
       </section>
+        <Section title="About">
+          <p className="w-4/6 text-sm leading-loose text-copy">
+            I’m a Software Engineer, currently at <a className="text-red" href="http://and.digital">AND Digital</a> in Leeds and have been since April 2019. I was previously a Software Engineer at <a className="text-bet" href="https://www.skybetcareers.com/">Sky Betting & Gaming</a>. I tend to work with React, Node.js, React Native & AWS.
+          </p>
+        </Section>
+        <Section title="Projects"></Section>
+        <Section title="Blog"></Section>
     </Layout>
+    </div>
   );
 }
 

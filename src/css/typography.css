@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "BerlingskeSerif-Black";
+  src: url("../fonts/BerlingskeSerif-Blk.woff2");
+}
+
+@font-face {
+  font-family: "BerlingskeSerif-Bold";
+  src: url("../fonts/BerlingskeSerif-Bd.woff2");
+}
+
+@font-face {
+  font-family: "Campton-Light";
+  src: url("../fonts/CamptonLight.ttf");
+}
+
+@font-face {
+  font-family: "Campton-Regular";
+  src: url("../fonts/CamptonRegular.ttf");
+}
