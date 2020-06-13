@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Section from "../components/section";
 
-// import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 import th from "../images/th.jpg";
 
 function IndexPage() {

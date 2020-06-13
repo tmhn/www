@@ -9,6 +9,7 @@ module.exports = {
     },
     fontFamily: {
       "display": ["BerlingskeSerif-Bold"],
+      "sub": ["Campton-Regular"],
       "copy": ["Campton-Light"]
     },
     borderColor: {
